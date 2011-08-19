@@ -59,7 +59,7 @@ class Numeric
 end
 
 module Kernel
-  # Converts _arg_ to a +Boolean+ or +nil+ if its truth is not
+  # Converts _arg_ to a +Boolean+ or +nil+ if its truth is not
   # knowable.
   def Boolean(arg)
     arg.to_bool
