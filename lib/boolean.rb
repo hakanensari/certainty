@@ -62,6 +62,6 @@ module Kernel
   # Converts _arg_ to a +Boolean+ or +nil+ if its truth is not
   # knowable.
   def Boolean(arg)
-    arg.to_bool rescue nil
+    arg.to_bool
   end
 end
