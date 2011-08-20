@@ -1,12 +1,16 @@
-# Boolean
+# Certainty
 
-Boolean is an object that represents truth.
+Certainty sneaks Boolean, an object that represents truth, into Ruby.
 
-[![travis](https://secure.travis-ci.org/hakanensari/boolean.png)](http://travis-ci.org/hakanensari/boolean)
+[![travis](https://secure.travis-ci.org/hakanensari/certainty.png)](http://travis-ci.org/hakanensari/certainty)
 
 ## Usage
 
-Once you require, inquire.
+Require.
+
+    require 'certainty'
+
+Inquire.
 
     true.is_a? Boolean
     => true
