@@ -3,10 +3,10 @@ $:.push File.expand_path('../../lib', __FILE__)
 require 'rubygems'
 require 'bundler/setup'
 
-require 'boolean'
+require 'certainty'
 require 'test/unit'
 
-class TestBoolean < Test::Unit::TestCase
+class TestCertainty < Test::Unit::TestCase
   def test_existence
     assert_kind_of Boolean, true
     assert_kind_of Boolean, false

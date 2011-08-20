@@ -1,17 +1,17 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "boolean/version"
+require "certainty/version"
 
 Gem::Specification.new do |s|
-  s.name        = "boolean"
-  s.version     = Boolean::VERSION
+  s.name        = "certainty"
+  s.version     = Certainty::VERSION
   s.authors     = ["Hakan Ensari"]
   s.email       = ["code@papercavalier.com"]
-  s.homepage    = "http://github.com/hakanensari/boolean"
+  s.homepage    = "http://github.com/hakanensari/certainty"
   s.summary     = %q{An object that represents truth}
-  s.description = %q{Boolean is an object that represents truth.}
+  s.description = %q{Certainty sneaks Boolean, an object that represents truth, into Ruby.}
 
-  s.rubyforge_project = "boolean"
+  s.rubyforge_project = "certainty"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
