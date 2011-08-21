@@ -26,7 +26,7 @@ end
 
 class String
   # Returns +true+ if, downcased, the receiver is +"1"+ or +"true"+,
-  # +false+ if it is +"0"+ or +"false"+, or +nil+ otherwise.
+  # +false+ if +"0"+ or +"false"+, or +nil+ otherwise.
   def to_bool
     {
       '1'     => true,
@@ -40,7 +40,7 @@ end
 
 class Numeric
   # Returns + true+ if the receiver, converted to float, is equal to
-  # +1.0+, +false+ if it is equal +0.0+, or +nil+ otherwise.
+  # +1.0+, +false+ if +0.0+, or +nil+ otherwise.
   def to_bool
     {
       1.0 => true,
