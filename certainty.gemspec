@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["code@papercavalier.com"]
   s.homepage    = "http://github.com/hakanensari/certainty"
   s.summary     = %q{An object that represents truth}
-  s.description = %q{Certainty sneaks Boolean, an object that represents truth, into Ruby.}
+  s.description = %q{Certainty provides Boolean, an object that represents truth.}
 
   s.rubyforge_project = "certainty"
 
