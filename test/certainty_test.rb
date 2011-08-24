@@ -8,8 +8,9 @@ require 'test/unit'
 
 class TestCertainty < Test::Unit::TestCase
   def test_existence
-    assert_kind_of Boolean, true
     assert_kind_of Boolean, false
+    assert_kind_of Boolean, nil
+    assert_kind_of Boolean, true
   end
 
   def test_boolean_representation

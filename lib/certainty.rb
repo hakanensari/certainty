@@ -1,9 +1,10 @@
 # = Certainty
 #
-# Sneaks +Boolean+, an object that represents truth, into Ruby.
+# Certainty provides +Boolean+, an object that represents truth.
 module Boolean; end
 
-[TrueClass, FalseClass].each do |klass|
+# The library posits three truth values: true, false, or unknown.
+[FalseClass, NilClass, TrueClass].each do |klass|
   klass.send :include, Boolean
 end
 
@@ -39,7 +40,7 @@ class String
 end
 
 class Numeric
-  # Returns + true+ if the receiver, converted to float, is equal to
+  # Returns +true+ if the receiver, converted to float, is equal to
   # +1.0+, +false+ if +0.0+, or +nil+ otherwise.
   def to_bool
     {
@@ -51,8 +52,7 @@ class Numeric
 end
 
 module Kernel
-  # Converts _arg_ to a boolean object or +nil+ if its truth is not
-  # knowable.
+  # Converts _arg_ to a boolean object.
   def Boolean(arg)
     arg.to_bool
   end
